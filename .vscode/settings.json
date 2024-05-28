@@ -1,0 +1,9 @@
+{
+    "liveServer.settings.multiRootWorkspaceName": "voiir",
+    "livePreview.previewDebounceDelay": 10,
+    "livePreview.serverRoot": "build/",
+    "livePreview.showServerStatusNotifications": true,
+    "liveServer.settings.CustomBrowser": "microsoft-edge",
+    "liveServer.settings.fullReload": true,
+    "livePreview.portNumber": 17099
+}
