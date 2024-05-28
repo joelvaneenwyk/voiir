@@ -8,9 +8,9 @@ import {
 import { Link } from 'react-router-dom';
 import { loginActions, userActions } from '../../../domain/stores/store';
 import { useDispatch, useSelector } from 'react-redux';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import UserModel from '../../../data/models/userModel';
-import { GoogleLogin, GoogleLogout } from 'react-google-login';
+import { GoogleLogin } from '@react-oauth/google';
 import { USER_EXISTS } from '../../../data/data-source/remote/apiList';
 import {
   getRequest,
@@ -19,7 +19,7 @@ import {
 
 function Login() {
   const dispatch = useDispatch();
-  const history = useHistory();
+  const history = useNavigate();
   const clientID = process.env.REACT_APP_clientID;
 
   async function LoginHandler(user) {

@@ -3,12 +3,12 @@ import art from '../../../assets/art.png';
 import { useRef } from 'react';
 import { fetch } from 'whatwg-fetch';
 import { HOME_PAGE_ROUTE } from '../../routes/route-paths';
-import { Link, useHistory } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { postRequest } from '../../../data/data-source/remote/apiCall';
 import { useSelector } from 'react-redux';
 
 function Onboard(props) {
-  const history = useHistory();
+  const history = useNavigate();
   const usernameInput = useRef();
   const cityInput = useRef();
   const stateInput = useRef();

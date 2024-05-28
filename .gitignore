@@ -1,4 +1,8 @@
-node_modules
-node_servers/node_modules/
+node_modules/
 node_servers/voiir-a23cb-firebase-adminsdk-8x041-38fcd8f12d.json
 .env
+
+.yarn/
+.pnp.cjs
+.pnp.loader.mjs
+build/

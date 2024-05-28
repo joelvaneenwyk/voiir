@@ -1,4 +1,4 @@
-import { Route, Switch } from 'react-router-dom';
+import { Route, Routes as _Routes } from 'react-router-dom';
 import About from '../pages/about/about';
 import HomePage from '../pages/homepage/homepage';
 import Login from '../pages/login/login';
@@ -20,7 +20,7 @@ import {
 
 function Routes() {
   return (
-    <Switch>
+    <_Routes>
       <Route path={ABOUT_PAGE_ROUTE}>
         <About />
       </Route>
@@ -50,7 +50,7 @@ function Routes() {
       <Route path={HOME_PAGE_ROUTE}>
         <HomePage />
       </Route>
-    </Switch>
+    </_Routes>
   );
 }
 

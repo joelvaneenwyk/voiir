@@ -1,4 +1,4 @@
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { PROFILE_PAGE_ROUTE } from '../../routes/route-paths';
 import ResultStyles from './result.module.css';
 import arrow from '../../../assets/arrow.png';
@@ -8,7 +8,7 @@ import instagramImage from '../../../assets/instagram.svg';
 import linkedinImage from '../../../assets/linkedin.svg';
 
 function Card(props) {
-  const navigator = useHistory();
+  const navigator = useNavigate();
   var iconArray = [];
   var connectedPlatforms = props.allDetails.connectedPlatform;
   console.log(props.allDetails.connectedPlatform, connectedPlatforms);

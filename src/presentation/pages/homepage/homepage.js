@@ -2,11 +2,11 @@ import homepageStyles from './homepage.module.css';
 import searchIcon from '../../../assets/search.svg';
 import { useState } from 'react';
 import axios from 'axios';
-import { useHistory } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { RESULT_PAGE_ROUTE } from '../../routes/route-paths';
 
 function Homepage(props) {
-  const navigator = useHistory();
+  const navigator = useNavigate();
 
   async function getResults(e) {
     e.preventDefault();

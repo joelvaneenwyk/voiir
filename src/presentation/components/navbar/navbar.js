@@ -5,7 +5,7 @@ import {
 } from '../../routes/route-paths';
 import navbarStyles from './navbar.module.css';
 import { Link } from 'react-router-dom';
-import { GoogleLogin } from 'react-google-login';
+import { GoogleLogin } from '@react-oauth/google';
 import { loginActions, userActions } from '../../../domain/stores/store';
 import { useDispatch, useSelector } from 'react-redux';
 import { postRequest } from '../../../data/data-source/remote/apiCall';
@@ -36,7 +36,7 @@ function Navbar() {
     //   history.push(HOME_PAGE_ROUTE);
   }
 
-  function error() {}
+  function error() { }
 
   return (
     <div className={navbarStyles.navbar}>
